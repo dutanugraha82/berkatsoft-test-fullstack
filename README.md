@@ -1,6 +1,7 @@
-# api test :
-# show = /api/movies (get)
-# detail = /api/movies/{id} (get)
-# update = /api/movies/update{id} (put)
-# create = /api/movies (post)
-# delete = /api/movies/delet/{id} (delete)
+#https://berkatsoft-test.herokuapp.com/
+api test : </br>
+-show = /api/movies (get) </br>
+-detail = /api/movies/{id} (get)</br>
+-update = /api/movies/update{id} (put)</br>
+-create = /api/movies (post)</br>
+-delete = /api/movies/delet/{id} (delete)</br>
