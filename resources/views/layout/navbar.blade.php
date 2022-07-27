@@ -7,16 +7,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Now Playing</a>
+            <a class="nav-link active text-white" aria-current="page" href="/">Now Playing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Popular</a>
+            <a class="nav-link active text-white" aria-current="page" href="/popular">Popular</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Top Rated</a>
+            <a class="nav-link active text-white" aria-current="page" href="/top-rated">Top Rated</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Up Coming</a>
+            <a class="nav-link active text-white" aria-current="page" href="/upcoming">Up Coming</a>
           </li>
         </ul>
       </div>

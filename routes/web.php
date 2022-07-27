@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [BioskopController::class,'index']);
+Route::get('/popular', [BioskopController::class,'popular']);
+Route::get('/top-rated', [BioskopController::class,'topRated']);
+Route::get('/upcoming', [BioskopController::class,'upcoming']);
+Route::get('/movies/{id}',[BioskopController::class,'detail']);

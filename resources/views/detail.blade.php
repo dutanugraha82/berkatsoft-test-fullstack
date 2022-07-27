@@ -12,26 +12,23 @@
     </header>
     <section style="margin-top: 5rem;">
         <div class="container">
-            <h1 class="text-center text-white">Up Coming</h1>
+            <h1 class="text-center text-white">{{ $movies->original_title }}</h1>
             <hr>
-            <div class="row">
-              @foreach ($movies as $item)
-              <div class="col-md-4">
-                <a href="/movies/{{ $item->id }}" style="text-decoration: none">
+            <div class="container p-3" style="background-image:url('https://image.tmdb.org/t/p/w300/{{ $movies->backdrop_path }}');background-repeat:no-repeat;background-size:cover">
                 <div class="card border border-3 border-primary rounded-3 mx-auto my-4" style="width: 18rem;">
-                    <img src="https://image.tmdb.org/t/p/w300/{{ $item->poster_path }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text text-dark fs-5 text-center">{{ $item->original_title }} </p>
-                      <small class="mx-auto text-dark">{{ $item->release_date }}</small>
-                      <p class="text-dark">Rate :{{ $item->vote_average }} (<small>{{ $item->vote_count }}(voted)</small>)</p>
-                    </div>
+                    <img src="https://image.tmdb.org/t/p/w300/{{ $movies->poster_path }}" class="card-img-top" alt="...">
                   </div>
-                </a>
-            </div>
-              @endforeach
-                
-            </div>
+                </div>
+                  <div class="text-white my-3">
+                  <p>{{ $movies->overview }}</p>
+                </div>
+                <p class="text-white text-center fs-3">Rating : {{ $movies->vote_average }}</p>
         </div>
+        <div class="container text-center text-lg-end">
+        <a class="btn btn-warning my-3" href="/">
+            Kembali
+        </a>
+    </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
